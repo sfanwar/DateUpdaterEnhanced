@@ -1,25 +1,9 @@
-# Date Updater
-No longer will you need to employ crazy hacks or manually update your date parameters. This extension allows you to refresh any date parameter to today's date whenever a workbook is opened.
+# Date Updater Enhanced
+This is Enhanced version of Tableau DateUpdater Extension found here https://github.com/tableau/extension-date-updater by KeshiaRose
 
-## How to use an Extension
-Download the Date Updater [manifest file](https://extensiongallery.tableau.com/products/28). Open Tableau Desktop 2018.2 or higher, drag in the "Extension" object to a dashboard. Click "My Extensions" and find the manifest file (.trex) you downloaded above.
+You can download the source code and build using yaml. host extension either node.js or IIS. i am using IIS to host it.
 
-## Using the Extension
-1. Bring in the extension
-2. In the configuration window, choose the date parameter to update
-3. Click OK
+New Features/Add Features
 
-Note: You can add as many instances of this extension as you like!
+Date Validation by defining Min or Max date either by custom date mm/dd/yyyy or use predefined date ranges. if user breaches the validation date it will display error message and revert back to old selected date. 
 
-## How to install for local use
-1. Make sure you have [Node.js](https://nodejs.org) and [Yarn](https://yarnpkg.com) installed. 
-2. Clone or download and unzip this repository. Open the command line to the `extension-date-updater-master` folder and run `yarn` to install the node modules.
-3. Edit the `homepage` in the `package.json` file to the server where you are going to host the extension. For example:
-```
-"homepage": "http://localhost:8080",
-```
-4. In the command line run `yarn build` to build the extension with the new homepage.
-5. Copy the files in `docs` to your web server at the path you specified in Step 3.
-
-## Support
-If you have questions about the extension or found a bug please open a new [issue](https://github.com/tableau/extension-date-updater/issues).
